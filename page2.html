@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page in Progress</title>
+    <style>
+      /* Style général : fond et centrage de l'image */
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Image centrale */
+      img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        display: block;
+      }
+
+      /* Pop-up d'alerte */
+      #popper {
+        position: fixed;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fffa;
+        color: black;
+        padding: 15px 25px;
+        border-radius: 8px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        z-index: 1000;
+      }
+
+      #popper.show {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Message d'alerte -->
+    <div id="popper">⚠️ This page is still under construction! ⚠️</div>
+
+    <!-- Image principale -->
+    <img src="progress.jpg" alt="Page in Progress" />
+
+    <script>
+      const popper = document.getElementById("popper");
+
+      // Affiche le popper au chargement et le fait disparaître après 3s
+      window.addEventListener("load", () => {
+        popper.classList.add("show");
+        setTimeout(() => popper.classList.remove("show"), 3000);
+      });
+    </script>
+  </body>
+</html>

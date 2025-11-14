@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backstage.</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>
+        Behind every Movie, <br />
+        a Hidden Network.
+      </h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Database▾</a>
+          <ul class="submenu">
+            <li><a href="page2.html">The Movie Data Base</a></li>
+            <li><a href="page2.html">Download the Data</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">About▾</a>
+          <ul class="submenu">
+            <li><a href="page2.html">The project</a></li>
+            <li><a href="page2.html">The team (me!)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- WINDOWS SECTION -->
+    <main>
+      <section class="windows">
+        <div class="windows-layout">
+          <!-- NOTE -->
+          <div class="window note">
+            <img src="note.png" alt="Note Window" />
+            <div class="text">
+              <p>
+                This project maps the hidden structure of the film industry.<br /><br />
+                Each node represents a person or a production: directors,
+                writers, studios.<br />
+                Edges show collaborations across movies, decades, and genres.<br /><br />
+                It’s not just a database - it’s a backstage pass to how cinema
+                actually connects.
+              </p>
+            </div>
+          </div>
+
+          <!-- ADMIN -->
+          <div class="window admin">
+            <img src="admin.png" alt="Admin Window" />
+            <div class="text small white">
+              <p>
+                &gt; loading data from TMDB...<br />
+                &gt; extracting relationships...<br />
+                &gt; building graph...<br />
+                &gt; network ready.<br /><br />
+              </p>
+            </div>
+          </div>
+
+          <!-- ERROR -->
+          <div class="window error">
+            <img src="error.png" alt="System Error" />
+            <div class="text right"></div>
+          </div>
+
+          <!-- ENTER -->
+          <div class="window enter">
+            <img src="enter.png" alt="Enter the Network" />
+            <div class="text right">
+              <p>Do you want to enter the Backstage Network ?</p>
+              <button class="img-btn">
+                <img src="winbutton.png" alt="Windows Enter Button" />
+                <span>YES!</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <img src="footer.jpg" alt="Footer Bar" class="footer-img" />
+      <span class="footer-text">© 2025 Website by Nina Shan</span>
+    </footer>
+  </body>
+</html>
